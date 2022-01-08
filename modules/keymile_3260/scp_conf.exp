@@ -1,0 +1,11 @@
+#!/usr/bin/expect 
+set timeout -1
+
+set HOST [lindex $argv 0]
+set PSWD [lindex $argv 1]
+set USER [lindex $argv 2]
+
+spawn scp -P 50271 $USER@$HOST:/cfg_all output/keymile_3260/$HOST.cfg
+expect "password:"
+send "$PSWD\r"
+expect eof

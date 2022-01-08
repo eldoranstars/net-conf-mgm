@@ -1,0 +1,16 @@
+#!/usr/bin/expect 
+set timeout -1
+
+set HOST [lindex $argv 0]
+set PSWD [lindex $argv 1]
+
+spawn ssh $HOST
+expect "password:"
+send "$PSWD\r"
+expect "#"
+send "sh info\r"
+expect "press"
+send " "
+expect "#"
+send "exit\r"
+expect eof
