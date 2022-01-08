@@ -1,4 +1,4 @@
-Network management configuration by Expect modules.
+## Network management configuration by Expect modules.
 
 Inventory scripts allow to make dynamic inventory.
 
@@ -8,4 +8,4 @@ Root scripts allow to run in parallel and choose modules with inventory.
 
 Output folder is for scripts artifacts.
 
-Inspired by Ansible.
+## Inspired by Ansible.
